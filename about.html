@@ -12,24 +12,44 @@
     box-sizing: border-box;
     
 }
+html{
+    background: linear-gradient(135deg,#000428,#004e92);
+}
         .container{
            
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            /* justify-content: space-between; */
             width: 100%;
-    height: 100vh;
+    height: calc(100%);
     padding: 10px;
-    background: linear-gradient(135deg,#000428,#004e92);
+        }
+        @media  (max-width: 1250px){
+            .container{
+                flex-direction: column; 
+            }
+            h2{
+                font-size: 20px;
+            }
+            span{
+                font-size: 18px;
+            }
+            li{
+                font-size: 15px;
+            }
+            .features{
+                padding:2px;
+               
+            }
         }
         .about-list{
             box-shadow: 5px 3px 30px   aqua;
             width: 100%;
     max-width: 650px;
-    height: 650px;
+    height: 100%;
     background: #fff;
     margin-top: 50px;
-    margin:  auto 20px;
+    margin: 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
     padding-bottom: 20px;
@@ -38,9 +58,9 @@
             width: 100%;
             box-shadow: 5px 3px 30px   aqua;
     max-width: 650px;
-    height: 650px;
+    height: 100%;
     background: #fff;
-    margin:  auto 20px;
+    margin: 20px;
     padding: 40px 30px 70px;
     border-radius: 15px;
         }
@@ -48,24 +68,22 @@
         font-weight: bold;
            
         }
-        h3{
+        /* h3{
             color: #002765;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-        }
+        } */
         h2{
             color: #002765;
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
         }
         ul{
-            margin: 20px;
+            margin: 10px;
         }
         ul li{
             margin-top: 10px;
-            text-align: justify;
+            /* text-align: justify; */
             /* text-indent: 3px; */
         }
         
@@ -86,11 +104,8 @@
                    <li> Clicking the button removes the corresponding task from the list.</li></ul></li>
                 <li><span>Local Storage: </span><ul><li>Implementing local storage to retain tasks across sessions. </li><li>
                     Tasks persist even when the browser is closed.</li></ul></li>
-                    <br>
-                
-                
+                    <br> 
             </ul>
-
         </div>
         <div class="features">
             <ul>
